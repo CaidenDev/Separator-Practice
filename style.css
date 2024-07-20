@@ -1,0 +1,78 @@
+
+*{
+font-family: "Abel", sans-serif;
+}
+
+body{
+    margin: 0;
+    color: white;
+    background: #202731;
+    overflow-x: hidden;
+}
+
+section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+}
+
+.blue{
+    background: rgb(108, 108, 197);
+}
+
+.pink{
+    background: rgb(243, 146, 162);
+}
+
+.purple{
+    background: rgb(173, 89, 173);
+}
+
+.orange{
+    background: rgb(233, 177, 74);
+}
+
+.red{
+    background: rgb(204, 91, 91);
+}
+
+.black{
+    background: rgb(20, 20, 20);
+}
+
+.yellow{
+    background: rgb(209, 209, 66);
+}
+
+.curve{
+    position: absolute;
+    height: 225px;
+    width: 100%;
+    bottom: 0;
+}
+
+.curve::before{
+content:'';
+display: block;
+position: absolute;
+border-radius: 100% 50%;
+width: 55%;
+height: 100%;
+background-color: rgb(108, 108, 197);
+transform: translate(85%, 60%);
+}
+
+.curve::after{
+content:'';
+display: block;
+position: absolute;
+border-radius: 100% 50%;
+width: 55%;
+height: 100%;
+background-color: orange;
+transform: translate(-4%, 40%);
+z-index: -1;
+}
